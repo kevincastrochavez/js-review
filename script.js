@@ -102,11 +102,39 @@
 // console.log(second);
 // console.log(third);
 
-// SPREAD OPERATOR
-const nums = [1, 2, 3];
-const moreNums = [...nums, 4, 5];
-// console.log(moreNums);
+// // SPREAD OPERATOR
+// const nums = [1, 2, 3];
+// const moreNums = [...nums, 4, 5];
+// // console.log(moreNums);
 
-// REST PATTERN
-const [a, b, ...others] = [1, 2, 3, 4, 5, 6];
-console.log(others);
+// // REST PATTERN
+// const [a, b, ...others] = [1, 2, 3, 4, 5, 6];
+
+// console.log(a);
+// console.log(b);
+// console.log(others);
+
+// const nums = [1, 2, 3];
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (const num of nums) {
+//   console.log(num);
+// }
+
+// for (let i = 0; i <= nums.length; i++) {
+//   //   console.log(`${nums[i]}: ${nums[i] % 3}`);
+//   if (nums[i] % 3 === 0) {
+//     console.log(nums[i]);
+//   }
+// }
+
+// // FINDS THE FIRST ITEM THAT MATCHES THE CONDITION
+// const filterNums = nums.find((num) => num % 3 === 0);
+// console.log(filterNums);
+
+// // FINDS THE FIRST ITEM THAT MATCHES THE CONDITION
+// const filterNums = nums.filter((num) => num % 3 === 0);
+// console.log(filterNums);
+
+const totalSum = nums.reduce((acc, curr) => acc + curr);
+console.log(totalSum);
