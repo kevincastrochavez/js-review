@@ -84,20 +84,29 @@
 
 // DESTRUCTURING ARRAYS
 
-const arr = [1, 2, 3];
-const [a, b, c] = arr;
-console.log(a);
-console.log(b);
-console.log(c);
+// const arr = [1, 2, 3];
+// const [a, b, c] = arr;
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
-// DESTRUCTURING OBJECTS
-const users = {
-  first: 'Kevin',
-  second: 'Citlalli',
-  third: 'Cindy',
-};
+// // DESTRUCTURING OBJECTS
+// const users = {
+//   first: 'Kevin',
+//   second: 'Citlalli',
+//   third: 'Cindy',
+// };
 
-const { first, second, third } = users;
-console.log(first);
-console.log(second);
-console.log(third);
+// const { first, second, third } = users;
+// console.log(first);
+// console.log(second);
+// console.log(third);
+
+// SPREAD OPERATOR
+const nums = [1, 2, 3];
+const moreNums = [...nums, 4, 5];
+// console.log(moreNums);
+
+// REST PATTERN
+const [a, b, ...others] = [1, 2, 3, 4, 5, 6];
+console.log(others);
