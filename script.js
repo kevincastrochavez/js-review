@@ -47,15 +47,37 @@
 //   return 2022 - birthYear;
 // };
 
-const friends = new Array('Cuauh', 'Isaac');
-console.log(friends);
-friends.push('Tona');
-console.log(friends);
-friends.unshift('Elena');
-console.log(friends);
-friends.pop();
-console.log(friends);
-friends.shift();
-console.log(friends);
-console.log(friends.indexOf('Cuauh'));
-console.log(friends.includes('Isaac'));
+// Array methods
+
+// const friends = new Array('Cuauh', 'Isaac');
+// console.log(friends);
+// friends.push('Tona');
+// console.log(friends);
+// friends.unshift('Elena');
+// console.log(friends);
+// friends.pop();
+// console.log(friends);
+// friends.shift();
+// console.log(friends);
+// console.log(friends.indexOf('Cuauh'));
+// console.log(friends.includes('Isaac'));
+
+// OBJECTS
+
+const user = {
+  name: 'Kevin',
+  lastName: 'Castro',
+  birthYear: 1997,
+
+  calcAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(user);
+user.isMarried = false;
+console.log(user);
+
+console.log(user.calcAge());
+console.log(user.age);
