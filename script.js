@@ -62,22 +62,42 @@
 // console.log(friends.indexOf('Cuauh'));
 // console.log(friends.includes('Isaac'));
 
-// OBJECTS
+// // OBJECTS
 
-const user = {
-  name: 'Kevin',
-  lastName: 'Castro',
-  birthYear: 1997,
+// const user = {
+//   name: 'Kevin',
+//   lastName: 'Castro',
+//   birthYear: 1997,
 
-  calcAge: function () {
-    this.age = 2022 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2022 - this.birthYear;
+//     return this.age;
+//   },
+// };
+
+// console.log(user);
+// user.isMarried = false;
+// console.log(user);
+
+// console.log(user.calcAge());
+// console.log(user.age);
+
+// DESTRUCTURING ARRAYS
+
+const arr = [1, 2, 3];
+const [a, b, c] = arr;
+console.log(a);
+console.log(b);
+console.log(c);
+
+// DESTRUCTURING OBJECTS
+const users = {
+  first: 'Kevin',
+  second: 'Citlalli',
+  third: 'Cindy',
 };
 
-console.log(user);
-user.isMarried = false;
-console.log(user);
-
-console.log(user.calcAge());
-console.log(user.age);
+const { first, second, third } = users;
+console.log(first);
+console.log(second);
+console.log(third);
