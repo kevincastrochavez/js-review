@@ -28,6 +28,34 @@
 //     console.log('Vacation');
 // }
 
-const myAge = 26;
-const result = myAge > 25 ? 'Yes' : 'No';
-console.log(`Can you rent a car?: ${result}`);
+// const myAge = 26;
+// const result = myAge > 25 ? 'Yes' : 'No';
+// console.log(`Can you rent a car?: ${result}`);
+
+// Function declaration
+// function getMyAge(birthYear) {
+//   return 2022 - birthYear;
+// }
+
+// // Anonymus function or function expression
+// const getMyAge2 = function (birthYear) {
+//   return 2022 - birthYear;
+// };
+
+// // Arrow function
+// const getMyAge3 = (birthYear) => {
+//   return 2022 - birthYear;
+// };
+
+const friends = new Array('Cuauh', 'Isaac');
+console.log(friends);
+friends.push('Tona');
+console.log(friends);
+friends.unshift('Elena');
+console.log(friends);
+friends.pop();
+console.log(friends);
+friends.shift();
+console.log(friends);
+console.log(friends.indexOf('Cuauh'));
+console.log(friends.includes('Isaac'));
