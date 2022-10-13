@@ -15,15 +15,19 @@
 // console.log(Boolean({}));
 // console.log(Boolean('Kevin'));
 
-const day = 'friday';
+// const day = 'friday';
 
-switch (day) {
-  case 'wednesday':
-    console.log('Today');
-    break;
-  case 'tuesday':
-    console.log('Another Day');
-    break;
-  default:
-    console.log('Vacation');
-}
+// switch (day) {
+//   case 'wednesday':
+//     console.log('Today');
+//     break;
+//   case 'tuesday':
+//     console.log('Another Day');
+//     break;
+//   default:
+//     console.log('Vacation');
+// }
+
+const myAge = 26;
+const result = myAge > 25 ? 'Yes' : 'No';
+console.log(`Can you rent a car?: ${result}`);
